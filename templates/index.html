@@ -5,10 +5,12 @@
     <body>
         <div class="jumbotron">
             <div class="container">
-                {%if forecast %}
-                    <h1> {{forecast}}</h1>
+                {%if businesses %}
+                    {% for business in businesses %}
+                        {%print (business.name)%}
+                    {% endfor %}
                 {%else %}
-                    <h1> Hello There! What's your current city? </h1>
+                    <h1> Hello There! What's your current address? </h1>
                     <form action="/" class="form-inline">
                         <div class="form-group">
                             <input type="text" name="address" placeholder="Enter your address here" class="form-control">
