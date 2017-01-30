@@ -8,6 +8,7 @@
                 {%if businesses %}
                     {% for business in businesses %}
                         {%print ("Name:{} Rating:{} Phone:{}".format(business.name, business.rating, business.phone))%}
+                        <br>
                     {% endfor %}
                 {%else %}
                     <h1> Hello There! What's your current address? </h1>
