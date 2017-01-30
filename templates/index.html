@@ -7,7 +7,7 @@
             <div class="container">
                 {%if businesses %}
                     {% for business in businesses %}
-                        {%print ("Name:{} Rating:{} Phone:{}".format(business.name, business.rating, business.phone))%}
+                        {%print ("Name:{}, Rating:{}, Phone:{}".format(business.name, business.rating, business.phone))%}
                         <br>
                     {% endfor %}
                 {%else %}
